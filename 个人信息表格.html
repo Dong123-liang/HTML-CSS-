@@ -1,0 +1,76 @@
+ <html>
+   <style>
+    *{
+      outline: none;
+    }
+  </style> 
+  <form>
+    <table
+      border="1"
+      cellpadding="20"
+      cellspacing="20"
+      bgcolor="#82c8a0"
+      align="center"
+      style="border-collapse:collapse;"> 
+      <tr>
+        <td colspan="4" align="center" style="background-color: #1f6e47">
+          个人信息
+        </td>
+      </tr>
+      <tr>
+        <td>姓名:</td>
+        <td><input type="text" /></td>
+        <td rowspan="2">性别:</td>
+        <td rowspan="2">
+          <select style="width: 200; height: 50">
+            <option selected="selected">--选择性别--</option>
+            <option>男</option>
+            <option>女</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>手机号码：</td>
+        <td><input type="text" placeholder="仅允许输入数字" /></td>
+      </tr>
+      <tr>
+        <td>政治面貌：</td>
+        <td>
+          <select>
+            <option selected="selected" value="--请选择政治面貌--"></option>
+            <option>群众</option>
+            <option>共青团员</option>
+            <option>党员</option>
+          </select>
+        </td>
+        <td>方向:</td>
+        <td>
+          <label for="前端">前端</label>
+          <input type="radio" name="方向" id="前端" />
+          <label for="后台">后台</label>
+          <input type="radio" name="方向" id="后台" />
+          <label for="全栈">全栈</label>
+          <input type="radio" name="方向" id="全栈" />
+        </td>
+      </tr>
+      <tr>
+        <td>账号：</td>
+        <td><input type="text" name="账号" /></td>
+        <td>密码：</td>
+        <td><input type="password" name="密码" /></td>
+      </tr>
+      <tr>
+        <td>特长:</td> 
+        <td colspan="3">
+          <textarea name="特长" style="width: 450"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center"><input type="reset" value="重置" /></td>
+        <td colspan="2" align="center"><input type="submit" value="提交" /></td>
+      </tr>
+    </style>
+    </table>
+  </form>
+</html>
