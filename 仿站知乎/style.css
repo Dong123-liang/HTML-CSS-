@@ -1,0 +1,837 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .Header_1 {
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    height: 52px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 200;
+    background-color: #fff;
+  }
+  li {
+    list-style: none;
+  }
+  .header {
+    width: 1169px;
+    position: relative;
+    padding-left: 20px;
+    margin:0 auto;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .logo {
+    font-size: 30px;
+    color: rgb(0, 102, 255);
+    float: left;
+    /* line-height: 54px; */
+  }
+  .nav {
+    float: left;
+    margin-left: 25px;
+  }
+  .nav ul li {
+    float: left;
+  }
+  .nav ul li a {
+    padding: 0 14px;
+    display: block;
+    line-height: 32px;
+    color: #8590a6;
+    font-weight: 15px;
+  }
+  .shouye
+  {
+    padding: 0 14px;
+    height: 52px;
+    display: block;
+    line-height: 52px;
+    color:black!important;
+    font-weight:bold !important;
+    }
+  
+  .nav ul li a:active {
+    border-bottom: 4px solid rgb(0, 102, 255);
+  }
+  .nav ul li a:hover{
+    color:black;
+  }
+  .seachbar {
+    float: left;
+    width: 482px;
+    height: 34px;
+    margin-left: 95px;
+  }
+  .seachbar input {
+    border-radius: 999px;
+    padding-left: 16px;
+    float: left;
+    width: 400px;
+    height: 34px;
+    margin-top: 3px;
+    background-color: rgb(246, 246, 246);
+    outline: none;
+    border-style: none;
+    position: relative;
+  }
+
+  .svg {
+    margin-top: 10px;
+  }
+  .SearchBar-searchButton {
+    margin-left: 12px;
+    padding: 0 12px;
+    background: transparent;
+    border-color: transparent;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;
+  }
+  .SearchBar-askButton {
+    border-radius: 999px;
+    width: 70px;
+    margin-left: 6px;
+    border-color: #06f;
+    color: #fff !important;
+    position: absolute;
+    top:3px;
+    height: 37px;
+    background-color:#06f !important;
+    outline:none ;
+  } 
+  .sou {
+    position: absolute;
+    top: 14px;
+    right: 350px;
+    z-index: 1;
+    color: #8590a6;
+    outline:none;
+    border-style: none;
+    cursor: pointer;
+  }
+  .xiaoxilogo {
+   position: absolute;
+   top:15px;
+   left:1000px;
+    color: #8590a6;
+    border-style: none;
+    background-color: white;
+    outline: none;
+  }
+  .dropdown-content-xiaoxi>p{
+   height: 40px;
+   width: 360px;
+   border-bottom:1px solid  #ebebeb;
+   text-align: center;
+   padding-top:20px;
+   font-size: 15px;
+   color: black;
+ }
+  .dropdown-content-xiaoxi {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 360px;
+  height: 438px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right:-173px;
+  top: 42px;
+
+}
+  .xiaoxilogo:hover .dropdown-content-xiaoxi{
+  display: inline-block;
+  z-index:5;
+  }
+  .xiaoxilogo .footer_1>button{
+    border: none;
+  flex: 1;
+  color: #8590a6;
+  background-color: #fff;
+  }
+  .xiaoxilogo .footer_1-bottom-button>button{
+    border: none;
+  color: #8590a6;
+  background-color: #fff;
+  }
+ .footer_1{
+  height: 60px;
+  width:360px;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+ }
+ .footer_1-top-button{
+  height: 48px;
+  width:360px;
+  border-top: 1px solid #ebebeb;
+ }
+ .footer_1-bottom-button {
+  border: none;
+  color: #8590a6;
+  cursor: pointer;
+  margin:335px 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  }
+  .weichatlogo {
+    position: absolute;
+    top:15px;
+    left:1080px;
+    color: #8590a6;
+    border-style: none;
+    background-color: white;
+    outline: none;
+    display: inline-block;
+  }
+ .dropdown-content-weichat {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  height: 438px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right:-122px;
+  top: 42px;
+}
+.dropdown-content-weichat>p{
+   height: 40px;
+   width: 360px;
+   border-bottom:1px solid  #ebebeb;
+   text-align: center;
+   padding-top:20px;
+   font-size: 15px;
+   color: black;
+ }
+ 
+  .dropdown-content-weichat .footer_2{
+  height: 310px;
+  width: 360px;
+  border-top:1px solid  #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+ }
+ .footer_2>button {
+  border: none;
+  color: #8590a6;
+  background: #fff;
+  cursor: pointer;
+  margin:325px 0 ;
+  padding: 0 10px;
+  
+}
+ .weichatlogo:hover .dropdown-content-weichat
+   {
+   display:inline-block;
+   z-index: 5;
+ }
+
+
+  .dropdown-content-touxiang{
+    display: none;
+    background-color: #f9f9f9;
+    width: 118px;
+    height: 123px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: #8590a6;
+    right: -48px;
+    top: 60px;
+    position:absolute;
+    padding:6px 0;
+  }
+  
+  .dropdown-content-touxiang>li>a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #8590a6;
+  height: 46px;
+}
+  .dropdown-content-touxiang>li>a>svg{
+    padding:0 3px;
+  }
+  .touxiang {
+    position: absolute;
+    top: 10px;
+    left: 1160px;
+    border-radius: 2px;
+  }
+  .touxiang>img{
+    border-radius: 2px;
+  }
+  .AppHeaderProfileMenu-item {
+   -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding:3px 0;  
+  display: flex;
+  height: 36px;
+}
+  .dropdown:hover .dropdown-content-touxiang {
+    display: block;
+    z-index: 5;
+  } 
+ .left{
+    width: 694px;
+    height: 2938px;
+    float: left;
+    margin-right:15px ;
+    margin-left:25px ;
+ }
+  .guonian{
+    width:694px;
+    height: 95.1833px;
+    margin-right: 5px;
+  }
+  .Topstory-container {
+    width: 1064px;
+    height: 2100px;
+    padding: 0 16px;
+    margin: 70px auto;
+  }
+  .Topstory-mainColumn {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right:25px;
+    margin-bottom: 0;
+    margin-top:10px ;
+    width: 694px;
+    height: 2100px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+  }
+  .GlobasiderBar {
+    height: 1600.67px;
+    width: 296px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+   margin-right:10px ;
+    position: relative;
+  }
+  .rebang {
+    font-size: 16px;
+    position: absolute;
+    color: black;
+    top: 16px;
+    left: 162px;
+  }
+  .guanzhu {
+    font-size: 16px;
+    position: absolute;
+    color: black;
+    top: 16px;
+    left: 102px;
+  }
+  .tuijian {
+    font-size: 16px;
+    color: #06f;
+    top: 16px;
+    left: 32px;
+    position: absolute;
+  }
+  .title{
+
+    font-size: 18px;
+    font-weight: 600;
+    top: 20px;
+    left: 32px;
+    position: absolute;
+    line-height: 1.6;
+
+  }
+  .card_1 {
+    width: 296px;
+    height: 154px;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    top: 0;
+    position: absolute;
+  }
+  .card_1  ul li a:hover{
+    color: #175199;
+  }
+  .GlobalWrite-navIcon{
+  position: absolute;
+  top: 20px;
+  left:20px;
+}
+.GlobalWrite-topTitle {
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  top: 70px;
+  left:20px;
+}
+.shipinlogo{
+position: absolute;
+  top: 20px;
+  left:90px;
+}
+.shipin{
+font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  top: 70px;
+  left:90px;
+}
+.wenzhanglogo{
+position: absolute;
+  top: 20px;
+  left:160px;
+}
+.wenzhang{
+font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  top: 70px;
+  left:160px;
+
+}
+.xiangfalogo{
+position: absolute;
+  top: 20px;
+  left:230px;
+}
+.xiangfa{
+font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  top: 70px;
+  left:230px;
+}
+.GlobalWrite-navTitle {
+  font-size: 14px;
+  color: #8590a6;
+  position: absolute;
+  top: 120px;
+  left:60px;
+}
+.caogao {
+  font-size: 14px;
+  color: #8590a6;
+  position: absolute;
+  top: 120px;
+  left:200px;
+}
+  .card_2 {
+    width: 296px;
+    height: 52px;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    top: 170px;
+    position: absolute;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  .CreatorEntrance-creatorIcon {
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+  color: #8590a6;
+  top:15px;
+  left:15px;
+  position: absolute;
+
+}    
+  .chuangzuo{
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    position: absolute;
+    top:15px;
+    left:45px;
+  }
+  .kaitong{
+    font-size: 14px;
+    font-weight: 500;
+    color:rgb(0,102,255);
+    position: absolute;
+    top:15px;
+    left:210px;
+  }
+  .kaitonglogo{
+    color: #8590a6;
+    position: absolute;
+    top:13px;
+    left:260px;
+  }
+  .card_3 {
+    width: 296px;
+    height: 175px;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    top: 240px;
+    position: absolute;
+  }
+  .livelogo{
+   position: absolute;
+   top: 20px;
+   left:35px;
+  }
+  .live{
+    position: absolute;
+   top: 55px;
+   left:35px;
+   font-size: 15px;
+   color: currentColor;
+  }
+  .shudian{
+    position: absolute;
+   top: 55px;
+   left:130px;
+   font-size: 15px;
+   color: #8590a6;
+  
+  }
+  .shudianlogo{
+    position: absolute;
+   top: 20px;
+   left:130px;
+  }
+  .yuanzhuologo{
+    position: absolute;
+   top: 20px;
+   left:230px;
+  }
+  .yuanzhuo{
+    position: absolute;
+   top: 55px;
+   left:230px;
+   font-size: 15px;
+   color: #8590a6;
+  }
+  .zhuanlanlogo{
+    position: absolute;
+   top: 100px;
+   left:35px;
+    
+}
+   .zhuanlan{
+    position: absolute;
+   top: 135px;
+   left:35px;
+   font-size: 15px;
+   color: #8590a6;
+
+   }
+   .fufeilogo{
+
+    position: absolute;
+   top: 100px;
+   left:130px;
+    
+   }
+   .fufei{
+    position: absolute;
+   top: 135px;
+   left:113px;
+   font-size: 15px;
+   color: #8590a6;
+
+   }
+   .baikelogo{
+    position: absolute;
+   top: 100px;
+   left:230px;
+   }
+  .baike{
+  
+    position: absolute;
+   top: 135px;
+   left:230px;
+   font-size: 15px;
+   color: #8590a6;
+   }
+  .card_4 {
+    width: 296px;
+    height: 246px;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    top: 420px;
+    position: absolute;
+  }
+  .Banner-adTag {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 45px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  color: #ebebeb;
+  background-color: #000;
+  opacity: .5;
+  font-size: 12px;
+  line-height: 27px;
+  text-align: center;
+}
+  .card_5 {
+    width: 296px;
+    height: 296px;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    top: 685px;
+    position: absolute;
+  }
+  .GlobalSideBar-navLink {
+   display: flex;
+   align-items: center;
+   padding: 0 20px!important;
+  height: 40px!important;
+  overflow: hidden;
+}
+.Button--plain {
+  height: auto;
+  padding: 0;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+.Button {
+  color: #8590a6;
+  font-size: 14px;
+   line-height: 32px;
+   text-align: center;
+    cursor: pointer;
+    background: none;
+}
+.GlobalSideBar-navText {
+-webkit-box-flex: 1;
+  flex: 1 1;
+  margin: 0 10px;
+  text-align: left;
+}
+.GlobalSideBar-navNumber {
+  padding: 0px 10px;
+  border-radius: 4px;
+  background: #f6f6f6;
+}
+.GlobalSideBar {
+  font-size: 14px;
+}
+.GlobalSideBar-navList {
+  width: 100%;
+  padding: 8px 0;
+}
+.card_6 {
+    width: 296px;
+    height: 246px;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.2);
+    top: 1000px;
+    position: absolute;
+  }
+.card_7{
+    width: 296px;
+    height: 322px;
+    top: 1260px;
+    position: absolute;
+    border: none;
+  }
+
+  .Footer{
+  color: #8590a6;
+  font-size: 13px;
+  line-height: 2;
+  padding: 0 0 0 10px;
+}
+.Footer-dot:after {
+margin:0 5px;
+content:"\B7"
+}
+.title:hover{
+color:#175199;
+}
+.title_1{
+
+font-size: 15px;
+top: 60px;
+left: 32px;
+position: absolute;
+line-height: 1.6;
+
+}
+.title_1:hover{
+color: #646464;
+}
+.TopstoryTabs {
+  height: 58px;
+  border-bottom: 1px solid #f0f2f7;
+  width:694px;
+}
+
+.TopstoryTabs_1 {
+  height: 175px;
+  border-bottom: 1px solid #f0f2f7;
+  width:694px;
+  position: relative;
+}
+.TopstoryTabs_2 {
+  height: 200px;
+  border-bottom: 1px solid #f0f2f7;
+  width:694px;
+  position: relative;
+  padding: 20px;
+}
+
+.TopstoryTabs_2-picture{
+    position: relative;
+    margin-top: 40px;
+    float: left;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 4px;
+    padding-right: 20px;    
+}
+.TopstoryTabs_2-picture-p{
+  word-break: break-word;
+  line-height: 1.6;
+  white-space: normal;
+  margin-top: 35px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-right: 25px;
+}
+
+.Button_yue{
+display: inline-block;
+padding: 0;
+margin-left: 4px;
+color: #175199;
+font-size: 14px;
+border:0;
+border-style: none;
+outline: none;
+background-color: transparent;
+}
+.Button_yue:hover{
+color: #8590a6;
+}
+.VoteButton {
+  padding: 0 10px;
+  color: #06f;
+  background: rgba(0,102,255,.1);
+  border-style: none;
+  font-size: 14px;
+  border-radius: 3px;  
+  outline: none; 
+}
+.VoteButton:hover{
+background-color: rgba(0,102,255,.15);
+
+}
+.span{
+position:absolute;
+top:120px;
+left:20px;
+display: inline-block;
+}
+.span_1{
+position:absolute;
+top:195px;
+left:20px;
+display: inline-block;
+}
+.VoteButton--down {
+  margin-left: 4px;
+}
+.ContentItem-action {
+  font-size: 14px;
+  position: absolute;
+  top:120px;
+  left:170px;
+  outline: none; 
+}
+.ContentItem-action_1 {
+  font-size: 14px;
+  position: absolute;
+  top:195px;
+  left:175px;
+  outline: none; 
+}
+.fenxiang{
+ font-size: 14px;
+  position: absolute;
+  top:120px;
+  left:280px;
+  outline: none; 
+}
+.fenxiang_1{
+ font-size: 14px;
+  position: absolute;
+  top:195px;
+  left:280px;
+  outline: none; 
+}
+.shoucang{
+font-size: 14px;
+  position: absolute;
+  top:120px;
+  left:350px;
+  outline: none; 
+}
+.shoucang_1{
+font-size: 14px;
+  position: absolute;
+  top:195px;
+  left:350px;
+  outline: none; 
+}
+
+.xihuan{
+ font-size: 14px;
+  position: absolute;
+  top:120px;
+  left:420px;
+  outline: none; 
+} 
+.xihuan_1{
+ font-size: 14px;
+  position: absolute;
+  top:195px;
+  left:420px;
+  outline: none; 
+} 
+.Button--plain:hover{
+color: #76839b;
+}
+.dian{
+position: absolute;
+  top:127px;
+  left:480px;
+  color: #8590a6;
+}
+.dian_1{
+position: absolute;
+  top:202px;
+  left:480px;
+  color: #8590a6;
+}
+.card_1 a div:hover{
+color: #175199;
+}
+.card_3 a span:hover{
+color: currentColor;
+}
+.GlobalSideBar-navLink:hover {
+  background: #f6f6f6;
+}
+.TopstoryTabs a:hover{
+color: #06f;
+}
+a.Footer-item:hover {
+  color: #175199;
+}
+ .TopstoryTabs_2 .TopstoryTabs_2-picture-p:hover{
+color: #646464
+}
