@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	select{
+		width: 300px;
+		height: 100px;
+		outline: none;
+	  text-align: center;		
+		background-color: aquamarine;
+		border-radius: 4px;
+		position: absolute;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+	option{
+		height: 100px;
+		display: inline-block;
+		background-color: rgb(68, 160, 152);
+	}
+</style>
+<body>
+	<select  onchange="window.open(this.options[this.selectedIndex].value)">
+		<option selected="selected" >--请选择你想跳转的网页--</option>
+		<option value="https://www.baidu.com">百度</option>
+		<option value="https://www.taobao.com">淘宝</option>
+		<option value="https://www.jd.com">京东</option>
+	</select>
+</body>
+</html>

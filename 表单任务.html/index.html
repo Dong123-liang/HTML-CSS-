@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        ul {
+            margin: 0 auto;
+            margin-top: 150px;
+            width: 600px;
+            list-style: none;
+            height: 500px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        
+        li {
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        
+        li:hover {
+            background-color: #6ff;
+        }
+        
+        .r-click {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            position: absolute;
+            border-bottom: 0px;
+        }
+        
+        .r-list {
+            width: 100px;
+            height: 25px;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="r-click">
+        <div class="r-list">增添</div>
+        <div class="r-list">删除</div>
+    </div>
+    <ul>
+        <li onclick="liclick(this)">
+            <input type="checkbox" name="me" onclick="change(this)">我的文件1</li>
+        <li onclick="liclick(this)">
+            <input type="checkbox" name="me" onclick="change(this)">我的文件1</li>
+        <li onclick="liclick(this)">
+            <input type="checkbox" name="me" onclick="change(this)">我的文件1</li>
+        <li onclick="liclick(this)">
+            <input type="checkbox" name="me" onclick="change(this)">我的文件1</li>
+        <li onclick="liclick(this)">
+            <input type="checkbox" name="me" onclick="change(this)">我的文件1</li>
+        <li onclick="liclick(this)">
+            <input type="checkbox" name="me" onclick="change(this)">我的文件1</li>
+    </ul>
+    <script type="text/javascript">
+        var li = document.getElementsByTagName('li');
+        var input = document.getElementsByTagName('input');
+
+        function liclick(obj) {
+            if (obj.style.backgroundColor = "white") {
+                for (var i = 0; i < li.length; i++) {
+                    if (li[i].style.backgroundColor == "green" && input[i].checked == false) {
+                        li[i].style.backgroundColor = "white";
+                    }
+                }
+                obj.style.backgroundColor = "green";
+                console.log("1");
+            } else if (obj.style.backgroundColor = "green" && obj.children[0].checked == false) {
+                obj.style.backgroundColor = "white";
+            }
+        }
+
+        function change(obj) {
+            var tr = obj.parentElement;
+            if (obj.checked) {
+                tr.style.backgroundColor = 'green';
+            } else {
+                tr.style.backgroundColor = 'white';
+            }
+        }
+        var div1 = document.getElementsByClassName('r-click')[0];
+        var ul = document.getElementsByTagName('ul')[0];
+        div1.style.display = "none";
+        div1.style.top = "1px";
+        div1.style.left = "1px";
+        ul.oncontextmenu = function(e) {
+            e.preventDefault();
+            var x = e.clientX;
+            var y = e.clientY;
+            div1.style.display = "block";
+            div1.style.top = y + "px";
+            div1.style.left = x + "px";
+        }
+        ul.onclick = function(e) {
+            if (e.buttons == 0) {
+                div1.style.display = "none";
+            }
+        }
+        var rlist1 = document.getElementsByClassName("r-list")[0];
+        var rlist2 = document.getElementsByClassName("r-list")[1];
+        rlist1.onclick = function() {
+            var mydocument = '<li><input type="checkbox">我的文件2</li>';
+            ul.insertAdjacentHTML('afterbegin', mydocument);
+        }
+      
+        
+        rlist2.onclick = function() {
+            for (var i = 0; i < li.length; i++) {
+                console.log(li.length);
+                if (input[i].checked == true) {
+                    li[i].remove();
+                }
+            }
+        }
+    </script>
+    </ul>
+</body>
+
+</html>

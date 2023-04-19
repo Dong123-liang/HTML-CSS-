@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ html{
+    font-size: 50px;
+ }
+.sec_kill_floor {
+  box-shadow: 0 1px 1px #f2f2f2;
+  background-color: #fff;
+  height: 2rem;
+  width: 15rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin: 250px auto;
+}
+.sec_kill_floor .tile_wrap {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABYwAAACQBAMAAABZrTKvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTO0PD+wQEOwVFewREekNDewQEOsQEC1iODQAAAAIdFJOUwB9YxIrs0VtoD6UjwAAA/1JREFUeNrt3cGO22QUBeAprsq2qSjdUks420gOsG0VK/sBjdiWEHnNmPeXsP94aIJEQExvmWt9n/oEZ46u72877s3NVa/vPrq9gZTOa3wnDnK6U2PUGJ7YUmE3Ro3h//LtWY1/FAc5fXdW45/EQU7Pzmr8Uhzk9Pysxu/EQfrl+GdhkH+rsFOQVvVwy+12IwzS+nKu8W+iILH3pcVfCYLU9q/vbn8VAwAAAAAAAJ/I88P9m+adHMjs+1XhQSqJvVjNPsiCrKq3DzV+tZEGSf2w+tPv0iDpML7/WOM3xjE5fbE68408SOmX8xp/LQ9S7hSrC7YKMnpxWeMPEiGhZ5c1fikREnp/WWM/7CX9Cc8Zj5zeXtb4lURI6P6yxm8kQkKrv5AI+WtsGmOpAEc8+G/ccGMBPP5gATyMZgG8GsQCeFGTxZ3xnPDIyY+YWMJW4SelLIAf+LOEcexzKyyAj1+xBD5FyBL4MCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkNtGBKQvcVvpMclV7UQOZG/xrt2Yx+ReKbbddtdWkiDxMK623WhnqyD1TtEVtmOS13g/1dhyTF7jZtwd97YKstd4P/XYNGYB07gzjUld4+PUY0sFdmOwG8NVVVVdfdD8cN/YNObp2pT3fjbXa2w15mnP4nZXJu2VkrZlHO+8G8TTncXj5lvOb5srTd9Oj6K1+HFJb8yBuGG87fpJd30cT7zh9qiLnle2I9Pt+sOhrqce/21NN9U/bM/8ixZ31y95PEK73ff1pDnurp3yKn+AR+ZcVjfzOGwY16ca90cRR+a8Hze3Y2czi5kS+0M99/ho4Ia1uCoXvWa85JkVIde6aRgPw9TjfqfGYcN4Xt16syIk324cxkO9Xq/HWdFJOCrm7XzROxzNipApMcY7dbhE7IIXetE7XfKE/OlNU2Jd1ophulchkKAad2UYj7tb76XtkBqfOrye9mM1jpwW80VPyBE723ixW0//hnLBk0jctFiXo7RLXlSNh3FMTNO46Xduakad8OoyjdemccyYKPfb6hKwhENjHoYSslkROI2n7dhSERpzWd0cQCKXtnU5RUs4cqkoB2khB+V7OAU8Tgqnj9BpMZwOIEIO0J7uG5d7QY3HH3E1Lg9LB9M4qMbdfENz3Np6D6MjYy5XvLrx+CPm8HEo71ScXg3S46CYu3J/fl033r8Kybc9Lcdevoo+g/ReDQq93PXzC8ee9odOCy9qhua7nWvce/cqclqM47iZWizkoB53/Vjkpul92yo25vlHTEKOmRPtww/8BRw6juevgYgiaq0YAz52fuwYHrMWx17vfEHhM8RcvvXh/ywODli+8TnLQMAAAADwWfwBKZghRTcFaz4AAAAASUVORK5CYII=) no-repeat;
+  background-size: contain;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  vertical-align: middle;
+}
+.sec_kill_floor .tile_wrap .sec_kill_floor_top {
+  float: left;
+  height: 1.35rem;
+  margin-top: 0.4rem;
+  margin-right: 0.25rem;
+  margin-left: 0.5rem;
+  font-family: PingFangSC-Semibold;
+  font-size: 0.7rem;
+  color: #333;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+.sec_kill_floor .tile_wrap .sec_kill_timer {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  float: left;
+  margin-top: 0.4rem;
+  vertical-align: middle;
+}
+.sec_kill_floor .tile_wrap .sec_kill_timer .sec_kill_timer_left {
+  font-size: 0.65rem;
+  color: #ff2727;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  float: left;
+  margin-right: 0.2rem;
+  position: relative;
+  top: -1px;
+}
+.sec_kill_floor .tile_wrap .sec_kill_timer .sec_kill_timer_left::after {
+  height: 0.875rem;
+  width: 1.025rem;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(//wq.360buyimg.com/jdm-home-page/pages/images/seckill-time-to_1de70c91.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+.sec_kill_floor .tile_wrap .sec_kill_timer .seckill-time {
+  float: left;
+  height: 100%;
+}
+.sec_kill_floor .tile_wrap .sec_kill_timer .seckill-time .seckill-time-box {
+  height: 100%;
+  color: #fff;
+  border-radius: 0.2rem;
+  font-size: 0.6rem;
+  width: 0.75rem;
+  background-color: red;
+  float: left;
+  text-align: center;
+}
+.sec_kill_floor .tile_wrap .sec_kill_timer .seckill-time span {
+  width: 0.3rem;
+  float: left;
+  height: 100%;
+  line-height: 1.4;
+  font-size: 0.6rem;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  color: #f2270c;
+  font-weight: 700;
+}
+</style>
+<body>
+    <div class="sec_kill_floor">
+        <div class="tile_wrap">
+         <div class="sec_kill_floor_top">京东秒杀</div>
+         <div class="sec_kill_timer">
+          <div class="sec_kill_timer_left">20</div>
+    
+          <div class="seckill-time">
+            <div class="seckill-time-box" id="hour">00</div>
+              <span>:</span>
+            <div class="seckill-time-box" id="min">00</div>
+              <span>:</span>
+            <div class="seckill-time-box" id="second">00</div>
+          </div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+window.addEventListener("load",function(){
+   var hour=document.querySelector("#hour");
+   var min = document.querySelector("#min");
+   var second = document.querySelector("#second");
+   var settime = +new Date("2022-10-1 20:00:00");
+   count();
+   setInterval(count,1000);
+   function count(){
+    var  date = +new Date();
+    var  numdate = (settime - date)/1000;
+    var h = parseInt(numdate / 60 / 60 % 24);
+    h = h<10?'0'+h:h;
+    hour.innerHTML = h;
+    var m = parseInt(numdate / 60 % 60);
+    m = m<10?'0'+m:m;
+    min.innerHTML = m;
+    var s = parseInt(numdate % 60);
+    s = s<10?'0'+s:s;
+    second.innerHTML = s;
+   }
+})
+</script>
+</html>

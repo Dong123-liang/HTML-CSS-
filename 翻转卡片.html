@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        margin: 200px auto;
+        position: relative;
+        transform-style: preserve-3d;
+    }
+    .box:hover .log{
+        transition:1s;
+        transform: rotateY(180deg);
+    }
+    .log{
+        backface-visibility: hidden;
+    }
+    .ln{
+        backface-visibility: hidden;
+        transform: rotateY(-180deg);
+    }
+    .box:hover .ln{
+        transform: rotateY(0deg);
+        transition: 1s;
+    }
+    .box div img{
+        position: absolute;
+        width:200px ;
+        height: 200px;
+        opacity: .8;
+        border-radius:2px;
+        /* backface-visibility: hidden; */
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <div class="log"><img src="https://pic1.zhimg.com/v2-04ce55cb61d19cd1770ad1ba9802e161_im.jpg " alt=""></div>
+        <div class="ln"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F4k%2Fs%2F02%2F2109242332225H9-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664093755&t=363c3d448de7878eeb04655d7fef8848 " alt=""></div>
+    </div>
+</body>
+</html>

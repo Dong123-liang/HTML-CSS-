@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页设计1</title>
+</head>
+<script>
+    window.onload=function() {
+        var odd = document.getElementById("odd");
+        odd.onclick = function() {
+             var sum = prompt("请输入一个整数：");
+             if(sum % 2 == 0&&sum!=0){
+                 alert("该数是偶数!");
+             }
+             else if(sum<=0){
+                 alert("该数是非奇非偶!");
+             }
+             else{
+                alert("该数是奇数!");
+             }
+
+        }
+    }
+</script>
+<body>
+    <input type='button' value="判断奇偶性"  id='odd'>
+</body>
+</html>

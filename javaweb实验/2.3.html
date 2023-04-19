@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+ 	*{
+		margin:0;padding:0;
+		font:normal 12px "微软雅黑";
+		color:#000000;
+	}
+  ul{
+		list-style-type: none;
+	}
+  a{
+		text-decoration: none;
+	}
+  #tab-list{
+		width:400px;
+		height:250px;
+		margin: 300px auto;
+	}
+  #ul1{
+		border-bottom: 2px solid #e05340;
+		height: 50px;
+	}
+  #ul1 li{
+		display: inline-block;
+		width: 100px;
+		line-height: 50px;
+		text-align: center;
+		border: 1px solid #999;
+		border-bottom: none;
+		margin-left: 5px;
+	}
+  #ul1 li:hover{cursor: pointer;}
+  #ul1 li.active{border-top:2px solid #e05340;border-bottom:2px solid #FFFFFF!important;}
+ 	#tab-list div{border: 1px solid #7396B8;border-top: none;}
+  #tab-list div li{height: 50px;line-height: 30px;text-indent: 8px;}
+  .show{display: block;}
+	.hide{display: none;} 
+</style>
+<body>
+	<!-- HTML页面布局 -->
+<div id="tab-list">
+	<ul id="ul1">
+			<li class="active">手机</li><li>厨具</li></li><li>服饰</li>
+	</ul>
+	<div>
+			<ul>
+					<li><a href="javascript:;">小米</a></li>
+					<li><a href="javascript:;">华为</a></li>
+					<li><a href="javascript:;">魅族</a></li>
+					<li><a href="javascript:;">vivo</a></li>
+			</ul>
+	</div>    
+	<div class="hide">
+			<ul>
+					<li><a href="javascript:;">电饭煲</a></li>
+					<li><a href="javascript:;">刀具</a></a></li>
+					<li><a href="javascript:;">烧水壶</a></li>
+					<li><a href="javascript:;">炒锅</a></li>
+			</ul>
+	</div>    
+	<div class="hide">
+			<ul>
+					<li><a href="javascript:;">Nike</a></li>
+					<li><a href="javascript:;">李宁</a></a></li>
+					<li><a href="javascript:;">Adidas</a></li>
+					<li><a href="javascript:;">安踏</a></li>
+			</ul>
+	</div>
+</div>
+</body>
+<script>
+// JS实现选项卡切换
+window.onload = function() {
+        var oUl1 = document.getElementById("ul1");
+        var aLi = oUl1.getElementsByTagName("li");
+        var TabList = document.getElementById("tab-list");
+        var TabDiv = TabList.getElementsByTagName("div");
+        for(let i = 0; i < aLi.length; i++) {
+            let index = i;//记录当前点击的索引值
+            aLi[i].onclick = function() {
+                for(let i = 0; i < aLi.length; i++) {
+                    aLi[i].className = "";
+                }
+                this.className = "active";
+                for(let j = 0; j < TabDiv.length; j++) {
+                    TabDiv[j].className = "hide";
+                }
+                TabDiv[index].className = "show";
+							
+            }        
+        }
+    }
+</script>
+</html>

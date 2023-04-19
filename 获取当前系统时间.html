@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页设计4</title>
+</head>
+<script>
+     window.onload = function(){
+    var btn = document.getElementById('btn');
+    btn.onclick = function(){
+    var tody = new Date();
+    var year = tody.getFullYear();
+    var month = tody.getMonth()+1;
+    var day = tody.getDate();
+    var hour = tody.getHours();
+    var minutes = tody.getMinutes();
+    var sceconds = tody.getSeconds();
+  document.write("今天日期: "+year +'年'+month+"月"+day+'日'+'现在时间：'+hour+'点'+minutes+'分'+sceconds+'秒');
+  }
+    }
+</script>
+<body>
+    <input type="button" value="获取当前系统的时间" id="btn">
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="submit"
+      class="submit"
+      value="点击我根据屏幕分变率跳转对应页面"
+    />
+  </body>
+  <style>
+    input{
+      position: absolute;
+      transform: translate(-50%,-50%);
+      top: 50%;
+      left: 50%;
+      height:100px;
+      width:400px;
+      background-color: aquamarine;
+    }
+  </style>
+  <script>
+    var screenWidth = window.screen.width;
+    var screenHeight = window.screen.height;
+    var screenLv = screenWidth * screenHeight;
+    // 定义不同分辨率对应的页面
+    var page1 = "page1.html"; // 1024x768
+    var page2 = "page2.html"; // 1280x800
+    var page3 = "page3.html"; // 1440x900
+console.log(screenLv)
+    var btn = document.querySelector(".submit");
+    btn.addEventListener("click", function () {
+      if (screenLv <= 500000) {
+        window.open(page1);
+      } else if (screenLv > 500000  && screenLv <= 1024000) {
+        window.open(page2);
+      } else if (screenLv > 1024000 && screenLv < 1440000) {
+        window.open(page3);
+      } else {
+        alert("暂不支持您的屏幕分辨率");
+      }
+    });
+  </script>
+</html>
